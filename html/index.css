@@ -18,6 +18,11 @@ body{
 .top_bar{
     padding: 0.5rem;
     border-radius: 10px;
+    margin: 0.2rem;
+}
+.bottom_bar{
+    padding-right: 0rem;
+    margin-right: 0rem;
 }
 .poster{
     margin-bottom: 2rem;
