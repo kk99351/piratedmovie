@@ -7,8 +7,6 @@ body{
     padding: 0.2rem;
     background-color: #293039;
 }
-.row{
-}
 .suggestion,.latest_stuffs{
     background-color: #28a745;
     margin-right: 1rem;
@@ -27,7 +25,7 @@ body{
     border-radius: 10px;
 }
 #notice,#featured_content, #main_content{
-    padding: 2rem 4rem 0rem;
+    padding: 2rem 0rem 0rem;
     background-color: #24272c;
 }
 .mv_content{
