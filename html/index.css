@@ -4,7 +4,7 @@ body{
     background-color: #24272c;
 }
 #title{
-    padding: 0.2rem;
+    padding: 0.2rem 8rem;
     background-color: #293039;
 }
 .suggestion,.latest_stuffs{
@@ -41,12 +41,17 @@ footer{
     text-align: center;
 }
 @media screen and (max-width: 600px) {
+    #title{
+        padding: 0.2rem;
+    }
     #notice,#featured_content, #main_content{
         padding: 1rem 0.5rem 0rem;
         background-color: #24272c;
     }
     .poster{
         width: 100px;
-        border-radius: 0px;
+    }
+    .form-control{
+        width: 100%;
     }
   }
