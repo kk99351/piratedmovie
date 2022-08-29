@@ -25,7 +25,7 @@ body{
     border-radius: 10px;
 }
 #notice,#featured_content, #main_content{
-    padding: 2rem 0rem 0rem;
+    padding: 2rem 8rem 0rem;
     background-color: #24272c;
 }
 .mv_content{
@@ -40,3 +40,13 @@ footer{
     margin: 2rem 0;
     text-align: center;
 }
+@media screen and (max-width: 600px) {
+    #notice,#featured_content, #main_content{
+        padding: 1rem 0.5rem 0rem;
+        background-color: #24272c;
+    }
+    .poster{
+        width: 50%;
+        border-radius: 0px;
+    }
+  }
