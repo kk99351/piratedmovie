@@ -1,0 +1,30 @@
+#main_content, #movie_content{
+    padding: 2rem 8rem 0rem;
+    background-color: #24272c;
+}
+.title{
+    font-size: 32px;
+    color:  gray;
+}
+.link_title{
+    text-align: center;
+}
+.linktitle{
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 2rem;
+    background-color: #FF7F50;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+}
+.links .btn{
+   background-color: #00008B;
+   border: 2px solid white;
+   margin: 1rem;
+}
+.links .btn:hover{
+    background-color: #00008B;
+    border: 3px solid white;
+    margin: 1rem;
+ }

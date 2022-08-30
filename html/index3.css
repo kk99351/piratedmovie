@@ -1,0 +1,15 @@
+#listing{
+    padding: 2rem 8rem 0rem;
+    background-color: #24272c;
+}
+.list_head{
+    font-size: 30px;
+    margin: 1rem;
+}
+.list-group-item{
+    color: #28a745;
+    font-weight: 600;
+    background-color: #293039;
+    border: 2px solid white;
+    margin: 0.5rem;
+}

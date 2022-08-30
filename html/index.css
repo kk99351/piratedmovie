@@ -24,10 +24,20 @@ body{
     padding-right: 0rem;
     margin-right: 0rem;
 }
+.movie_card{
+    
+}
 .poster{
     margin-bottom: 2rem;
     width: 100%;
     border-radius: 10px;
+}
+.image_text{
+    position: absolute;
+    width: 185px;
+    height: 278px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0),hsla(0, 0%, 0%, 0.5));
 }
 #notice,#featured_content, #main_content{
     padding: 2rem 8rem 0rem;
