@@ -1,6 +1,33 @@
+<?php
+include "host.php";
+if (isset($_REQUEST['search_query'])){
+    $search_array = explode(" ",$_REQUEST['search_query']);
+    $query = "SELECT id, name, poster_img  FROM movie_details WHERE";
+    foreach ($search_array as $values){
+        if ($search_array[0] == $values){
+            $query = $query." name LIKE '%$values%'";
+        }
+        else{
+            $query = $query." OR name LIKE '%$values%'";
+        }
+        $query = $query.' ORDER BY views DESC LIMIT 4';
+    }
+}
+else if (isset($_REQUEST['genere'])){
+
+}
+else if (isset($_REQUEST['category'])){
+
+}
+else if (isset($_REQUEST['imdb'])){
+
+}
+else{
+    header('Location: '.'localhost');
+}
+?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -106,9 +133,13 @@
                         <a class="nav-link" href="" style="color: #fbc93b;">TOP IMDB</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <form class="form-inline my-2 my-lg-0" action="movie.php">
+                    <div>
+                        <input class="form-control mr-sm-2" id="searchquerybox" onkeyup="searchquery(this.value)" type="search" placeholder="Search" aria-label="Search">
+                        <div id="search_box">
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-success my-2 my-sm-0" disabled id="search_bt" type="submit">Search</button>
                 </form>
             </div>
         </nav>

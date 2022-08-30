@@ -39,9 +39,46 @@ body{
     background-color: hsla(0, 0%, 0%, 0.5);
     background-image: linear-gradient(hsla(0, 0%, 0%, 0),hsla(0, 0%, 0%, 0.5));
 }
-#notice,#featured_content, #main_content{
+#notice,#featured_content,#main_content{
     padding: 2rem 8rem 0rem;
     background-color: #24272c;
+}
+#search_box{
+    display: none;
+    padding: 0.1rem;
+    display: block;
+    position: absolute;
+    width: 230px;
+    max-height: 400px;
+    overflow: auto;
+    z-index: 1;
+    background-color:  #e7eaf0;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: 3px solid #28a745;
+    display: none;
+}
+.search_card{
+    background-color:  #28a745;
+    border-radius: 2px;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    overflow: auto;
+}
+.search_title{
+    font-size: 14px;
+    color: white;
+}
+#load_more{
+    padding: 0.1rem;
+    color: #24272c;
+    text-align: center;
+}
+.search_image{
+    width: 50px;
+    border-radius: 2px;
+    float: right;
+    margin-left: 0.2rem;
 }
 .mv_content{
     margin: 1rem;
